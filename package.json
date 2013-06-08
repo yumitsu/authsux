@@ -1,0 +1,13 @@
+
+{
+    "name": "authsux",
+    "version": "0.0.1",
+    "description": "A simple Node.js authentication library",
+    "keywords": [ "auth", "authentication", "rest", "api" ],
+    "author": "Zach McAuliffe <zach.mcauliffe@gmail.com>",
+    "license": "GNU General Public License",
+    "dependencies": {},
+    "engine": {
+        "node": ">=0.10.7"
+    }
+}
