@@ -13,7 +13,8 @@ var config = {
     'signatureField': 'signature',
     'publicKeyField': 'key',
     'tokenField': 'token',
-    'hashAlgorithm': 'sha256'
+    'hashAlgorithm': 'sha256',
+    'signatureExpiration': 300000
 };
 
 /**
@@ -87,9 +88,8 @@ function hasValidSignature(query) {
     } else if (signature.indexOf('-') === -1) {
         valid = false;
     } else {
-        // timestamp is in milliseconds
         timestamp = signature.substring(signature.lastIndexOf('-') + 1);
-        if (Date.now() - timestamp > 300000) {
+        if (Date.now() - timestamp > config.signatureExpiration) {
             valid = false;
         } else if (
             sign(query, timestamp)
