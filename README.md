@@ -106,6 +106,7 @@ Obviously, you might want to add some additional security over top of this, but 
   - *authsux.config.publicKeyField*: the query field for the public key value (defaults to 'key')
   - *authsux.config.tokenField*: the query field for the token value (defaults to 'token')
   - *authsux.config.hashAlgorithm*: the [crypto](https://npmjs.org/package/crypto) hash algorithm to use for the signature (defaults to 'sha256')
+  - *authsux.config.signatureExpiration*: the time (in milliseconds) that the signature will expire (defaults to '300000' - 5 minutes)
 
 **Exports**
 
