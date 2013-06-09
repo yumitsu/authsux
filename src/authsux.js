@@ -64,12 +64,8 @@ function hasValidKey(query) {
     var valid = true;
     if (typeof query[config.publicKeyField] === 'undefined') {
         valid = false;
-        console.log('invalid: typeof');
-    } else if (
-        helpers.getPrivateKey(query[config.publicKeyField]) === ''
-    ) {
+    } else if (helpers.getPrivateKey(query[config.publicKeyField]) === '') {
         valid = false;
-        console.log('invalid: private key');
     }
     return valid;
 }
