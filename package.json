@@ -1,4 +1,3 @@
-
 {
     "name": "authsux",
     "version": "0.0.1",
@@ -6,6 +5,7 @@
     "keywords": [ "auth", "authentication", "rest", "api" ],
     "author": "Zach McAuliffe <zach.mcauliffe@gmail.com>",
     "license": "GNU General Public License",
+    "main": "index",
     "dependencies": {},
     "engine": {
         "node": ">=0.10.7"
