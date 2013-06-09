@@ -86,8 +86,12 @@ You can then use the middleware like so:
     // will only execute if the keys and signature are valid
   });
   
-  app.get('/foo', auth.checkKey, function() {
+  app.put('/foo', auth.checkKey, function() {
     // will only execute if the keys are valid
+  });
+  
+  app.delete('/foo', function() {
+    // performs no authentication
   });
   
   // ...
