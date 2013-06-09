@@ -90,7 +90,7 @@ You can then use the middleware like so:
     // will only execute if the keys are valid
   });
   
-  app.delete('/foo', function() {
+  app.del('/foo', function() {
     // performs no authentication
   });
   
@@ -106,6 +106,7 @@ Obviously, you might want to add some additional security over top of this, but 
   - *authsux.config.publicKeyField*: the query field for the public key value (defaults to 'key')
   - *authsux.config.tokenField*: the query field for the token value (defaults to 'token')
   - *authsux.config.hashAlgorithm*: the [crypto](https://npmjs.org/package/crypto) hash algorithm to use for the signature (defaults to 'sha256')
+  - *authsux.config.signatureExpiration*: the time (in milliseconds) that the signature will expire (defaults to '300000' - 5 minutes)
 
 **Exports**
 
@@ -118,7 +119,7 @@ Obviously, you might want to add some additional security over top of this, but 
 
 **Future Plans**
 
-  - Support parameters send in the header in addition to the query string
+  - Support sending parameters in the header in addition to the query string
 
 
 I hope you enjoy authsux.  If you have any questions or concerns, please voice them!
