@@ -118,7 +118,7 @@ Obviously, you might want to add some additional security over top of this, but 
 
 **Future Plans**
 
-  - Support parameters send in the header in addition to the query string
+  - Support sending parameters in the header in addition to the query string
 
 
 I hope you enjoy authsux.  If you have any questions or concerns, please voice them!
