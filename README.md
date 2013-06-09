@@ -105,17 +105,16 @@ Obviously, you might want to add some additional security over top of this, but 
   - *authsux.config.signatureField*: the query field for the signature value (defaults to 'signature')
   - *authsux.config.publicKeyField*: the query field for the public key value (defaults to 'key')
   - *authsux.config.tokenField*: the query field for the token value (defaults to 'token')
-  - *authsux.config.hashAlgorithm*: the crypto hash algorithm to use for the signature (defaults to 'sha256')
-  - 
+  - *authsux.config.hashAlgorithm*: the [crypto](https://npmjs.org/package/crypto) hash algorithm to use for the signature (defaults to 'sha256')
 
 **Exports**
 
-  - authsux.config: configuration parameters (see above)
-  - authsux.helpers: helper functions to be defined by the developer and used by authsux internals
-  - authsux.sign: the function used to sign requests; accepts an array of query parameters and an optional timestamp
-  - authsux.hasValidKey: checks for a valid public key and private key
-  - authsux.hasValidSignature: checks for a valid signature; also checks hasValidKey
-  - authsux.hasValidToken: checks for a valid token; also checks hasValidSignature
+  - *authsux.config*: configuration parameters (see above)
+  - *authsux.helpers*: helper functions to be defined by the developer and used by authsux internals
+  - *authsux.sign*: the function used to sign requests; accepts an array of query parameters and an optional timestamp
+  - *authsux.hasValidKey*: checks for a valid public key and private key
+  - *authsux.hasValidSignature*: checks for a valid signature; also checks hasValidKey
+  - *authsux.hasValidToken*: checks for a valid token; also checks hasValidSignature
 
 **Future Plans**
 
