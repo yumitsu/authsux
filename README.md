@@ -26,12 +26,12 @@ authsux follows a very basic HMAC & bearer token strategy.
 
   var authsux = require('./path/to/authsux');
   
-  // a helper method for retrieving a private key, given a public key
+  // a helper function for retrieving a private key, given a public key
   authsux.helpers.getPrivateKey = function(publicKey) {
     // beyond the scope of this example
   }
   
-  // a helper method to check whether a bearer token is valid
+  // a helper function to check whether a bearer token is valid
   authsux.helpers.isValidToken = function(token) {
     // beyond the scope of this example
   }
