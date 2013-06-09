@@ -90,7 +90,7 @@ You can then use the middleware like so:
     // will only execute if the keys are valid
   });
   
-  app.delete('/foo', function() {
+  app.del('/foo', function() {
     // performs no authentication
   });
   
