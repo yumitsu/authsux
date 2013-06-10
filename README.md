@@ -24,7 +24,7 @@ authsux follows a very basic HMAC & bearer token strategy.
 ``` javascript
   /* auth.js */
 
-  var authsux = require('./path/to/authsux');
+  var authsux = require('authsux');
   
   // a helper function for retrieving a private key, given a public key
   authsux.helpers.getPrivateKey = function(publicKey) {
